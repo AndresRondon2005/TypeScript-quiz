@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box'
+
 interface CounterState {
   count: number;
 }
@@ -12,10 +15,10 @@ function EventHandlingComponent() {
   };
 
   return (
-    <div>
-      <p>Contador: {state.count}</p>
-      <button onClick={handleClick}>Hazme clic</button>
-    </div>
+    <Box>
+      <h1>Contador: {state.count}</h1>
+      <Button variant='contained' onClick={handleClick} color='primary'>Hazme clic</Button>
+    </Box>
   );
 }
 

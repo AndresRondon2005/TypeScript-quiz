@@ -10,6 +10,7 @@ import { TsList } from './quiz-ts-1';
 import { TsReadonly } from './quiz-ts-1';
 import { TsInput } from './quiz-ts-1';
 import { TsTuple } from './quiz-ts-1';
+import AppBar from './theme/appbar'
 
 function App() {
   const stringArray = ['Item 1', 'Item 2', 'Item 3'];
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <ThemeProvider theme="light">
+      <AppBar/>
     <div className="App">
       <TsBasics basics={["Juan", "Diego", "Fernando", "Felipe"]}/>
       <TsUserProfile

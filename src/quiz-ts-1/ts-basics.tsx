@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Box from '@mui/material/Box';
+
+
 interface TsBasicsProps {
  basics: string[];
 }
+
 
 function TsBasics({basics}: TsBasicsProps) {
 
@@ -12,15 +16,15 @@ function TsBasics({basics}: TsBasicsProps) {
   },[])
 
   return  (
-  <div>
-    <h1>Conceptos basicos de TypeScript</h1>
-    <h4>Total:{basicsTotal}</h4>
-    <ul>
-      {basics.map((basics) =>(
-        <li key={basics}>{basics}</li>
-      ))}
-    </ul>
-  </div>
+    <Box>
+      <h1>Total:{basicsTotal}</h1>
+      <ul>
+        {basics.map((basics) =>(
+          <li key={basics}>{basics}</li>
+        ))}
+      </ul>
+    </Box>
   )
 }
+
 export default TsBasics;
