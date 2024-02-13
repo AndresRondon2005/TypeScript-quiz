@@ -1,8 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-import {error} from 'console';
-
-
 export const theme = createTheme ({
     palette: {
         primary: {

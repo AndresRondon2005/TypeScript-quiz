@@ -36,7 +36,7 @@ function App() {
     <TsReadonly items={readonlyStrings} />
     <TsInput value="Phone" />
     <TsInput value={351247896} />
-    <TsInput value={{ name: "Andres ", age: 18 }} />
+    <TsInput value={{ name: "Andres ", age: 19 }} />
     <TsTuple/>
     </ThemeProvider>
   );
